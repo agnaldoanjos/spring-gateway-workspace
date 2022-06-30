@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: method_route_https
+          uri: https://localhost
+          predicates:
+            - Path=/demo/**
+            - Method=GET,POST
+        - id: method_route_folha_https
+          uri: https://acervo.folha.uol.com.br
+          predicates:
+            - Path=/digital/**
+            - Method=GET,POST
+      httpclient:
+        ssl:
+          useInsecureTrustManager: true
