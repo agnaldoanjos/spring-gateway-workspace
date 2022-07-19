@@ -1,14 +1,13 @@
-package br.home.zuul.demozuul;
+package br.home.generic.demorest;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class DemoRestApplicationTests {
 
 	@Test
 	void contextLoads() {
-
 	}
 
 }
